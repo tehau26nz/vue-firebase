@@ -11,7 +11,9 @@
 
     <div id="app">
         <h2>{{title}} - {{author}} - {{age}}</h2>
-        <p></p>
+        <button @click="age++">Increase age</button>
+        <button @click="age--">Decrease age</button>
+        <div @click="changeTitle('Oppenheimer')">Change book title</div>
     </div>
 
     <script src="app.js"></script>

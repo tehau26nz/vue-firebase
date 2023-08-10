@@ -8,6 +8,12 @@ const app = Vue.createApp({
             author: 'Polynesian Writer',
             age: '30'
         }
+    },
+    methods:{
+        changeTitle(title){
+            //this.title = 'Word of mouth'
+            this.title=title
+        }
     }
 });
 

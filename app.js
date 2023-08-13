@@ -6,9 +6,9 @@ const app = Vue.createApp({
         return {
             showBooks: true,
             books:[
-                {title: 'The Discovery of Tahiti', author: 'Joan Druett', img: 'assets/1.jpg'},
-                {title: 'So Far the World', author: 'Tavae Raioaoa', img: 'assets/2.jpg'},
-                {title: 'Kawai: For Such a Time as This', author: 'Monty Soutar', img: 'assets/3.jpg'},
+                {title: 'The Discovery of Tahiti', author: 'Joan Druett', img: 'assets/1.jpg', isFav: true},
+                {title: 'So Far the World', author: 'Tavae Raioaoa', img: 'assets/2.jpg', isFav: false},
+                {title: 'Kawai: For Such a Time as This', author: 'Monty Soutar', img: 'assets/3.jpg', isFav: true},
             ]
         }
     },

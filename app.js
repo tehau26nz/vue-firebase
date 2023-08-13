@@ -5,11 +5,11 @@ const app = Vue.createApp({
     data() {
         return {
             showBooks: true,
-            title: 'Tahitian Holiday',
-            author: 'Polynesian Writer',
-            age: '30',
-            x: 0,
-            y: 0,
+            books:[
+                {title: 'The Discovery of Tahiti', author: 'Joan Druett', img: 'assets/1.jpg'},
+                {title: 'So Far the World', author: 'Tavae Raioaoa', img: 'assets/2.jpg'},
+                {title: 'Kawai: For Such a Time as This', author: 'Monty Soutar', img: 'assets/3.jpg'},
+            ]
         }
     },
     methods:{

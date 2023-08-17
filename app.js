@@ -7,11 +7,13 @@ const app = Vue.createApp({
             showBooks: true,
             books:[
                 {title: 'The Discovery of Tahiti', author: 'Joan Druett', img: 'assets/1.jpg', isFav: true},
-                {title: 'So Far the World', author: 'Tavae Raioaoa', img: 'assets/2.jpg', isFav: false},
+                {title: 'So Far the World', author: 'Tavae Raioaoa', img: 'assets/2.jpg', isFav: true},
                 {title: 'Kawai: For Such a Time as This', author: 'Monty Soutar', img: 'assets/3.jpg', isFav: true},
             ]
         }
     },
+
+    // Methods to react to different events in a browser
     methods:{
         toggleShowBooks(){
             this.showBooks = !this.showBooks
@@ -30,6 +32,8 @@ const app = Vue.createApp({
             book.isFav = !book.isFav
         }
     },
+
+    // Useful computed properties to define a data property inside a component
     computed: {
         filteredBooks(){
             return this.books.filter((book) => book.isFav)
